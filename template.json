@@ -62,15 +62,18 @@
                 },
                 {
                     "label": "MSSQL_BACKUP_DIR",
-                    "name": "MSSQL_BACKUP_DIR"
+                    "name": "MSSQL_BACKUP_DIR",
+                    "default": "/var/opt/sqlserver"
                 },
                 {
                     "label": "MSSQL_DATA_DIR",
-                    "name": "MSSQL_DATA_DIR"
+                    "name": "MSSQL_DATA_DIR",
+                    "default": "/var/opt/sqlserver"
                 },
                 {
                     "label": "MSSQL_LOG_DIR",
-                    "name": "MSSQL_LOG_DIR"
+                    "name": "MSSQL_LOG_DIR",
+                    "default": "/var/opt/sqlserver"
                 }
             ],
             "restart_policy": "always",
@@ -78,13 +81,10 @@
             "type": 1,
             "volumes": [
                 {
-                    "container": "/etc/gitlab"
+                    "container": "systemdbs:/var/opt/mssql"
                 },
                 {
-                    "container": "/var/log/gitlab"
-                },
-                {
-                    "container": "/var/opt/gitlab"
+                    "container": "userdbs:/var/opt/sqlserver"
                 }
             ]
         },
