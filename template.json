@@ -9,7 +9,7 @@
             "description": "Open-source end-to-end software development platform",
             "image": "gitlab/gitlab-ee:latest",
             "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/gitlab_ce.png",
-            "name": "Gitlab EE",
+            "name": "Gitlab_EE",
             "platform": "linux",
             "ports": [
                 "8080:80/tcp",
