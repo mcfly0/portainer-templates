@@ -4,7 +4,7 @@
 "type": "container",
 "title": "Gitlab EE",
 "description": "Open-source end-to-end software development platform",
-"note": "Default username is root. Check the <a href="https://docs.gitlab.com/omnibus/docker/README.html#after-starting-a-container\" target="_blank">Gitlab documentation to get started.",
+"note": "Default username is root. Check the \u003ca href='https://docs.gitlab.com/omnibus/docker/README.html#after-starting-a-container\' target='_blank'\u003e Gitlab documentation to get started.",
 "categories": ["development", "project-management"],
 "platform": "linux",
 "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/gitlab_ce.png",
