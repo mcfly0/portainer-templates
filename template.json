@@ -63,17 +63,17 @@
                 {
                     "label": "MSSQL_BACKUP_DIR",
                     "name": "MSSQL_BACKUP_DIR",
-                    "default": "/var/opt/sqlserver"
+                    "default": "/var/opt/sqlserver/backup"
                 },
                 {
                     "label": "MSSQL_DATA_DIR",
                     "name": "MSSQL_DATA_DIR",
-                    "default": "/var/opt/sqlserver"
+                    "default": "/var/opt/sqlserver/data"
                 },
                 {
                     "label": "MSSQL_LOG_DIR",
                     "name": "MSSQL_LOG_DIR",
-                    "default": "/var/opt/sqlserver"
+                    "default": "/var/opt/sqlserver/log"
                 }
             ],
             "restart_policy": "always",
@@ -81,10 +81,13 @@
             "type": 1,
             "volumes": [
                 {
-                    "container": "systemdbs:/var/opt/mssql"
+                    "container": "/var/opt/sqlserver/backup"
                 },
                 {
-                    "container": "userdbs:/var/opt/sqlserver"
+                    "container": "/var/opt/sqlserver/log"
+                },
+                {
+                    "container": "/var/opt/sqlserver/data"
                 }
             ]
         },
