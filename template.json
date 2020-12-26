@@ -47,9 +47,35 @@
             ],
             "env": [
                 {
-                    "default": "Developer",
                     "label": "MSSQL_PID",
-                    "name": "MSSQL_PID"
+                    "name": "MSSQL_PID",
+                    "select": [
+                      {
+                        "text": "Developer",
+                        "value": "Developer",
+                        "default": true
+                      },
+                      {
+                        "text": "Express",
+                        "value": "Express"
+                      },
+                      {
+                        "text": "Web",
+                        "value": "Web"
+                      },
+                      {
+                        "text": "Standard",
+                        "value": "Standard"
+                      },
+                      {
+                        "text": "Enterprise",
+                        "value": "Enterprise"
+                      },
+                      {
+                        "text": "Evaluation",
+                        "value": "Evaluation"
+                      }
+                    ],
                 },
                 {
                     "label": "SA_PASSWORD",
