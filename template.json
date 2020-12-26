@@ -75,7 +75,7 @@
                         "text": "Evaluation",
                         "value": "Evaluation"
                       }
-                    ],
+                    ]
                 },
                 {
                     "label": "SA_PASSWORD",
