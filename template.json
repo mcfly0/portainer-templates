@@ -34,6 +34,62 @@
         },
         {
             "categories": [
+                "database"
+            ],
+            "description": "Official images for Microsoft SQL Server on Linux for Docker Engine",
+            "image": "mcr.microsoft.com/mssql/server:2019-latest",
+            "logo": "https://upload.wikimedia.org/wikipedia/de/thumb/8/8c/Microsoft_SQL_Server_Logo.svg/2000px-Microsoft_SQL_Server_Logo.svg.png",
+            "note": "For a complete list of environment variables: https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-configure-environment-variables?view=sql-server-linux-ver15",
+            "name": "SQLServer2019",
+            "platform": "linux",
+            "ports": [
+                "1433:1433/tcp"
+            ],
+            "env": [
+                {
+                    "default": "Developer",
+                    "label": "MSSQL_PID",
+                    "name": "MSSQL_PID"
+                },
+                {
+                    "label": "SA_PASSWORD",
+                    "name": "SA_PASSWORD"
+                },
+                {
+                    "label": "ACCEPT_EULA",
+                    "name": "ACCEPT_EULA",
+                    "default": "Y"
+                },
+                {
+                    "label": "MSSQL_BACKUP_DIR",
+                    "name": "MSSQL_BACKUP_DIR"
+                },
+                {
+                    "label": "MSSQL_DATA_DIR",
+                    "name": "MSSQL_DATA_DIR"
+                },
+                {
+                    "label": "MSSQL_LOG_DIR",
+                    "name": "MSSQL_LOG_DIR"
+                }
+            ],
+            "restart_policy": "always",
+            "title": "Microsoft SQL Server 2019",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/etc/gitlab"
+                },
+                {
+                    "container": "/var/log/gitlab"
+                },
+                {
+                    "container": "/var/opt/gitlab"
+                }
+            ]
+        },
+        {
+            "categories": [
                 "Other"
             ],
             "description": "AdGuard Home is a network-wide software for blocking ads & tracking. After you set it up, it’ll cover ALL your home devices, and you don’t need any client-side software for that. With the rise of Internet-Of-Things and connected devices, it becomes more and more important to be able to control your whole network.",
