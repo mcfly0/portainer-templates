@@ -37,6 +37,81 @@
                 "Business"
             ],
             "description": "Bonita is an open-source business process management and workflow suite",
+            "env": [
+                {
+                    "default": "platform",
+                    "label": "PLATFORM_PASSWORD",
+                    "name": "PLATFORM_PASSWORD"
+                },
+                {
+                    "default": "platformAdmin",
+                    "label": "PLATFORM_LOGIN",
+                    "name": "PLATFORM_LOGIN"
+                },
+                {
+                    "default": "install",
+                    "label": "TENANT_PASSWORD",
+                    "name": "TENANT_PASSWORD"
+                },
+                {
+                    "default": "install",
+                    "label": "TENANT_LOGIN",
+                    "name": "TENANT_LOGIN"
+                },
+                {
+                    "label": "REST_API_DYN_AUTH_CHECKS",
+                    "name": "REST_API_DYN_AUTH_CHECKS",
+                    "description": "This optional environment variable is used to enable/disable dynamic authorization checking on Bonita REST API. The default value is true, which will activate dynamic authorization checking.",
+                    "select": [
+                        {
+                            "text": "enable dynamic authorization checking",
+                            "value": "true",
+                            "default": true
+                        },
+                        {
+                            "text": "disable dynamic authorization checking",
+                            "value": "false"
+                        }
+                    ]
+                },
+                {
+                    "label": "HTTP_API",
+                    "name": "HTTP_API",
+                    "description": "This optional environment variable is used to enable/disable the Bonita HTTP API. The default value is false, which will deactivate the HTTP API.",
+                    "select": [
+                        {
+                            "text": "enable",
+                            "value": "true"
+                        },
+                        {
+                            "text": "disable",
+                            "value": "false",
+                            "default": true
+                        }
+                    ]
+                },
+                {
+                    "default": "-Xms1024m -Xmx1024m -XX:MaxPermSize=256m",
+                    "label": "JAVA_OPTS",
+                    "name": "JAVA_OPTS"
+                },
+                {
+                    "label": "ENSURE_DB_CHECK_AND_CREATION",
+                    "name": "ENSURE_DB_CHECK_AND_CREATION",
+                    "description": "This optional environment variable is used to allow/disallow the SQL queries to automatically check and create the databases using the database administrator credentials. The default value is true.",
+                    "select": [
+                        {
+                            "text": "allow",
+                            "value": "true",
+                            "default": true
+                        },
+                        {
+                            "text": "disallow",
+                            "value": "false"
+                        }
+                    ]
+                }
+            ],
             "logo": "https://d1q6f0aelx0por.cloudfront.net/product-logos/library-bonita-logo.png",
             "note": "Now you can access the Bonita Portal on localhost:8080/bonita and login using: tech_user / secret",
             "platform": "linux",
