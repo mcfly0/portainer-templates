@@ -117,8 +117,8 @@
             "note": "Now you can access the Bonita Portal on localhost:8080/bonita and login using: tech_user / secret",
             "platform": "linux",
             "repository": {
-                "stackfile": "Stacks/bonita.yml",
-                "url": "https://github.com/mcfly0/portainer-templates"
+                "stackfile": "bonita.yml",
+                "url": "https://github.com/mcfly0/portainer-templates/blob/main/stacks/"
             },
             "title": "Bonita",
             "type": 3
