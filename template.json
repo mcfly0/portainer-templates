@@ -34,6 +34,21 @@
         },
         {
             "categories": [
+                "Business"
+            ],
+            "description": "Bonita is an open-source business process management and workflow suite",
+            "logo": "https://d1q6f0aelx0por.cloudfront.net/product-logos/library-bonita-logo.png",
+            "note": "Now you can access the Bonita Portal on localhost:8080/bonita and login using: tech_user / secret",
+            "platform": "linux",
+            "repository": {
+                "stackfile": "Stacks/bonita.yml",
+                "url": "https://github.com/mcfly0/portainer-templates"
+            },
+            "title": "Bonita",
+            "type": 3
+        },
+        {
+            "categories": [
                 "database"
             ],
             "description": "Official images for Microsoft SQL Server on Linux for Docker Engine",
