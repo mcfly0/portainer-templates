@@ -40,22 +40,22 @@
             "description": "Bonita is an open-source business process management and workflow suite",
             "env": [
                 {
-                    "default": "platform",
+                    "default": "pfsecret",
                     "label": "PLATFORM_PASSWORD",
                     "name": "PLATFORM_PASSWORD"
                 },
                 {
-                    "default": "platformAdmin",
+                    "default": "pfadmin",
                     "label": "PLATFORM_LOGIN",
                     "name": "PLATFORM_LOGIN"
                 },
                 {
-                    "default": "install",
+                    "default": "secret",
                     "label": "TENANT_PASSWORD",
                     "name": "TENANT_PASSWORD"
                 },
                 {
-                    "default": "install",
+                    "default": "tech_user",
                     "label": "TENANT_LOGIN",
                     "name": "TENANT_LOGIN"
                 },
@@ -118,7 +118,7 @@
             "platform": "linux",
             "repository": {
                 "stackfile": "bonita.yml",
-                "url": "https://github.com/mcfly0/portainer-templates/blob/main/stacks/"
+                "url": "https://raw.githubusercontent.com/mcfly0/portainer-templates/main/stacks/"
             },
             "title": "Bonita",
             "type": 3
