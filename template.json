@@ -127,6 +127,35 @@
             "categories": [
                 "database"
             ],
+            "description": "The PostgreSQL object-relational database system provides reliability and data integrity.",
+            "image": "postgres:latest",
+            "logo": "https://d1q6f0aelx0por.cloudfront.net/product-logos/library-postgres-logo.png",
+            "note": "For a complete list of environment variables: https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-configure-environment-variables?view=sql-server-linux-ver15",
+            "name": "Postgres",
+            "platform": "linux",
+            "env": [
+                {
+                    "label": "POSTGRES_USER",
+                    "name": "POSTGRES_USER"
+                },
+                {
+                    "label": "POSTGRES_PASSWORD",
+                    "name": "POSTGRES_PASSWORD"
+                }
+            ],
+            "restart_policy": "always",
+            "title": "Postgres",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/var/lib/postgresql/data"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "database"
+            ],
             "description": "Official images for Microsoft SQL Server on Linux for Docker Engine",
             "image": "mcr.microsoft.com/mssql/server:2019-latest",
             "logo": "https://upload.wikimedia.org/wikipedia/de/thumb/8/8c/Microsoft_SQL_Server_Logo.svg/2000px-Microsoft_SQL_Server_Logo.svg.png",
