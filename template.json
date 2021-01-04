@@ -98,6 +98,7 @@
             "restart_policy": "always",
             "title": "Postgres",
             "type": 1,
+            "hostname": "postgres",
             "volumes": [
                 {
                     "container": "/var/lib/postgresql/data"
