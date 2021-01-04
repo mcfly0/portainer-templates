@@ -133,6 +133,9 @@
             "note": "For a complete list of environment variables: https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-configure-environment-variables?view=sql-server-linux-ver15",
             "name": "Postgres",
             "platform": "linux",
+            "ports": [
+                "5432:5432/tcp"
+            ],
             "env": [
                 {
                     "label": "POSTGRES_USER",
