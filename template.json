@@ -46,6 +46,11 @@
                     "name": "DB_VENDOR"
                 },
                 {
+                    "default": "postgres",
+                    "label": "DB_HOST",
+                    "name": "DB_HOST"
+                },
+                {
                     "default": "pfsecret",
                     "label": "PLATFORM_PASSWORD",
                     "name": "PLATFORM_PASSWORD"
