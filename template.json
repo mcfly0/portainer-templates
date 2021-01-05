@@ -38,7 +38,6 @@
             ],
             "name": "Bonita",
             "description": "Bonita is an open-source business process management and workflow suite",
-            "image": "amd64/bonita",
             "env": [
                 {
                     "default": "postgres",
