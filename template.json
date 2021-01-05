@@ -79,7 +79,7 @@
             "note": "Now you can access the Bonita Portal on localhost:8080/bonita and login using: tech_user / secret",
             "platform": "linux",
             "title": "Bonita",
-            "type": "stack"
+            "type": 3
         },
         {
             "categories": [
