@@ -2,7 +2,7 @@
 version: '2'
 
 services:
-  db:
+  postgres:
     image: postgres:11
     environment:
       POSTGRES_PASSWORD: example
@@ -17,14 +17,14 @@ services:
     environment:
       - POSTGRES_ENV_POSTGRES_PASSWORD=example
       - DB_VENDOR=postgres
-      - DB_HOST=db
+      - DB_HOST=postgres
       - TENANT_LOGIN=tech_user
       - TENANT_PASSWORD=secret
       - PLATFORM_LOGIN=pfadmin
       - PLATFORM_PASSWORD=pfsecret
     restart: on-failure:2
     depends_on:
-      - db
+      - postgres
     entrypoint:
       - bash
       - -c

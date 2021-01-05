@@ -71,11 +71,15 @@
                     "name": "TENANT_LOGIN"
                 }
             ],
+            "repository": {
+                "stackfile": "Template/Stack/bonity.yml",
+                "url": "https://github.com/mcfly0/portainer-templates"
+            },
             "logo": "https://d1q6f0aelx0por.cloudfront.net/product-logos/library-bonita-logo.png",
             "note": "Now you can access the Bonita Portal on localhost:8080/bonita and login using: tech_user / secret",
             "platform": "linux",
             "title": "Bonita",
-            "type": 1
+            "type": "stack"
         },
         {
             "categories": [
