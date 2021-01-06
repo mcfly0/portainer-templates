@@ -37,6 +37,7 @@
                 "Business"
             ],
             "name": "Bonita",
+            "image": "amd64/bonita:latest",
             "description": "Bonita is an open-source business process management and workflow suite",
             "env": [
                 {
@@ -70,15 +71,11 @@
                     "name": "TENANT_LOGIN"
                 }
             ],
-            "repository": {
-                "stackfile": "stacks/bonita.yml",
-                "url": "https://github.com/mcfly0/portainer-templates"
-            },
             "logo": "https://d1q6f0aelx0por.cloudfront.net/product-logos/library-bonita-logo.png",
             "note": "Now you can access the Bonita Portal on localhost:8080/bonita and login using: tech_user / secret",
             "platform": "linux",
             "title": "Bonita",
-            "type": 3
+            "type": 1
         },
         {
             "categories": [
