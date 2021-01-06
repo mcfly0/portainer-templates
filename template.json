@@ -74,6 +74,10 @@
             "logo": "https://d1q6f0aelx0por.cloudfront.net/product-logos/library-bonita-logo.png",
             "note": "Now you can access the Bonita Portal on localhost:8080/bonita and login using: tech_user / secret",
             "platform": "linux",
+            "ports": [
+                "8080:8080/tcp"
+            ],
+            "restart_policy": "always",
             "title": "Bonita",
             "type": 1
         },
