@@ -42,6 +42,29 @@
             "env": [
                 {
                     "default": "postgres",
+                    "label": "DB_ADMIN_USER",
+                    "name": "DB_ADMIN_USER"
+                },
+                {
+                    "label": "DB_ADMIN_PASS",
+                    "name": "DB_ADMIN_PASS"
+                },
+                {
+                    "default": "bonitadb",
+                    "label": "DB_NAME",
+                    "name": "DB_NAME"
+                },
+                {
+                    "default": "bonitauser",
+                    "label": "DB_USER",
+                    "name": "DB_USER"
+                },
+                {
+                    "label": "DB_PASS",
+                    "name": "DB_PASS"
+                },
+                {
+                    "default": "postgres",
                     "label": "DB_VENDOR",
                     "name": "DB_VENDOR"
                 },
