@@ -102,6 +102,7 @@
             ],
             "restart_policy": "always",
             "title": "Bonita",
+            "hostname": "bonita",
             "type": 1
         },
         {
@@ -130,7 +131,7 @@
             "restart_policy": "always",
             "title": "Postgres",
             "type": 1,
-            "hostname": "postgres",
+            "hostname": "bonita",
             "volumes": [
                 {
                     "container": "/var/lib/postgresql/data"
