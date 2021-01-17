@@ -37,7 +37,7 @@
                 "monitoring"
             ],
             "description": "Official Grafana Enterprise docker image",
-            "image": "grafana/grafana-enterprise:latest",
+            "image": "grafana/grafana:latest",
             "logo": "https://secure.gravatar.com/avatar/31cea69afa424609b2d83621b4d47f1d.jpg?s=80&r=g&d=mm",
             "name": "Grafana",
             "platform": "linux",
