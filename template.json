@@ -47,7 +47,7 @@
             "restart_policy": "always",
             "title": "Grafana Enterprise",
             "type": 1,
-            "hostname": "Grafana"
+            "hostname": "grafana"
         },
         {
             "categories": [
