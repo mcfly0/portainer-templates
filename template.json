@@ -39,14 +39,15 @@
             "description": "Official Grafana Enterprise docker image",
             "image": "grafana/grafana-enterprise:latest",
             "logo": "https://secure.gravatar.com/avatar/31cea69afa424609b2d83621b4d47f1d.jpg?s=80&r=g&d=mm",
-            "name": "GRafana",
+            "name": "Grafana",
             "platform": "linux",
             "ports": [
                 "3000:3000/tcp"
             ],
             "restart_policy": "always",
             "title": "Grafana Enterprise",
-            "type": 1
+            "type": 1,
+            "hostname": "Grafana"
         },
         {
             "categories": [
