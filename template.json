@@ -45,7 +45,7 @@
                 "3000:3000/tcp"
             ],
             "restart_policy": "always",
-            "title": "Grafana Enterprise",
+            "title": "Grafana",
             "type": 1,
             "hostname": "grafana"
         },
