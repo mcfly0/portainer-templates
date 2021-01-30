@@ -3,6 +3,79 @@
     "templates": [
         {
             "categories": [
+                "database"
+            ],
+            "description": "InfluxDB is an open source time series database for recording metrics, events, and analytics",
+            "image": "influxdb:latest",
+            "logo": "https://d1q6f0aelx0por.cloudfront.net/product-logos/library-influxdb-logo.png",
+            "name": "InfluxDB",
+            "platform": "linux",
+            "ports": [
+                "8086 :8086 /tcp"
+            ],
+            "restart_policy": "unless-stopped",
+            "title": "Influx DB",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/var/lib/influxdb"
+                }
+            ],
+            "env": [
+                {
+                    "default": "influxdb",
+                    "label": "INFLUXDB_DB",
+                    "name": "INFLUXDB_DB",
+                    "description": "Automatically initializes a database with the name of this environment variable."
+                },
+                {
+                    "default": "admin",
+                    "label": "INFLUXDB_ADMIN_USER",
+                    "name": "INFLUXDB_ADMIN_USER",
+                    "description": "The name of the admin user to be created. If this is unset, no admin user is created."
+                },
+                {
+                    "label": "INFLUXDB_ADMIN_PASSWORD",
+                    "name": "INFLUXDB_ADMIN_PASSWORD",
+                    "description": "The password for the admin user configured with INFLUXDB_ADMIN_USER. If this is unset, a random password is generated and printed to standard out."
+                },
+                {
+                    "default": "telegraf",
+                    "label": "INFLUXDB_USER",
+                    "name": "INFLUXDB_USER",
+                    "description": "The name of a user to be created with no privileges. If INFLUXDB_DB is set, this user will be granted read and write permissions for that database."
+                },
+                {
+                    "label": "INFLUXDB_USER_PASSWORD",
+                    "name": "INFLUXDB_USER_PASSWORD",
+                    "description": "The password for the user configured with INFLUXDB_USER. If this is unset, a random password is generated and printed to standard out."
+                },
+                {
+                    "default": "reader",
+                    "label": "INFLUXDB_READ_USER",
+                    "name": "INFLUXDB_READ_USER",
+                    "description": "The name of a user to be created with read privileges on INFLUXDB_DB. If INFLUXDB_DB is not set, this user will have no granted permissions."
+                },
+                {
+                    "label": "INFLUXDB_READ_USER_PASSWORD",
+                    "name": "INFLUXDB_READ_USER_PASSWORD",
+                    "description": "The password for the user configured with INFLUXDB_READ_USER. If this is unset, a random password is generated and printed to standard out."
+                },
+                {
+                    "default": "writer",
+                    "label": "INFLUXDB_WRITE_USER",
+                    "name": "INFLUXDB_WRITE_USER",
+                    "description": "The name of a user to be created with write privileges on INFLUXDB_DB. If INFLUXDB_DB is not set, this user will have no granted permissions."
+                },
+                {
+                    "label": "INFLUXDB_WRITE_USER_PASSWORD",
+                    "name": "INFLUXDB_WRITE_USER_PASSWORD",
+                    "description": "The password for the user configured with INFLUXDB_WRITE_USER. If this is unset, a random password is generated and printed to standard out."
+                }
+            ]
+        },
+        {
+            "categories": [
                 "development",
                 "project-management"
             ],
