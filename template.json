@@ -5,6 +5,67 @@
             "categories": [
                 "database"
             ],
+            "description": "Telegraf is an agent for collecting metrics and writing them to InfluxDB or other outputs.",
+            "image": "telegraf:latest",
+            "logo": "https://d1q6f0aelx0por.cloudfront.net/product-logos/library-telegraf-logo.png",
+            "name": "Telegraf",
+            "platform": "linux",
+            "ports": [
+                "8125:8125/udp",
+                "8092:8092/udp",
+                "8094:8094/tcp"
+            ],
+            "restart_policy": "unless-stopped",
+            "title": "Telegraf",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/var/lib/influxdb"
+                }
+            ],
+            "env": [
+                {
+                    "default": "influxdb",
+                    "label": "HOST_ETC",
+                    "name": "HOST_ETC",
+                    "description": "/etc"
+                },
+                {
+                    "default": "/proc",
+                    "label": "HOST_PROC",
+                    "name": "HOST_PROC",
+                    "description": "/hostfs/proc"
+                },
+                {
+                    "default": "/sys",
+                    "label": "HOST_SYS",
+                    "name": "HOST_SYS",
+                    "description": "/hostfs/sys"
+                },
+                {
+                    "default": "/var",
+                    "label": "HOST_VAR",
+                    "name": "HOST_VAR",
+                    "description": "/hostfs/var"
+                },
+                {
+                    "default": "/run",
+                    "label": "HOST_RUN",
+                    "name": "HOST_RUN",
+                    "description": "/hostfs/run"
+                },
+                {
+                    "default": "/",
+                    "label": "HOST_MOUNT_PREFIX",
+                    "name": "HOST_MOUNT_PREFIX",
+                    "description": "/hostfs"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "database"
+            ],
             "description": "InfluxDB is an open source time series database for recording metrics, events, and analytics",
             "image": "influxdb/influxdb:latest",
             "logo": "https://d1q6f0aelx0por.cloudfront.net/product-logos/library-influxdb-logo.png",
