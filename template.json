@@ -25,6 +25,21 @@
             ],
             "env": [
                 {
+                    "default": "http://influxdb",
+                    "label": "INFLUX_URL",
+                    "name": "INFLUX_URL",
+                    "description": "Url zur InfluxDB"
+                },
+                {
+                    "default": "true",
+                    "label": "INFLUX_SKIP_DATABASE_CREATION",
+                    "name": "INFLUX_SKIP_DATABASE_CREATION"
+                },
+                {
+                    "label": "INFLUX_PASSWORD",
+                    "name": "INFLUX_PASSWORD"
+                },
+                {
                     "default": "influxdb",
                     "label": "HOST_ETC",
                     "name": "HOST_ETC",
