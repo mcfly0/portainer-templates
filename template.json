@@ -3,10 +3,10 @@
     "templates": [
         {
             "categories": [
-                "database"
+                "Agent"
             ],
             "description": "Telegraf is an agent for collecting metrics and writing them to InfluxDB or other outputs.",
-            "image": "telegraf:latest",
+            "image": "telegraf",
             "logo": "https://d1q6f0aelx0por.cloudfront.net/product-logos/library-telegraf-logo.png",
             "name": "Telegraf",
             "platform": "linux",
@@ -18,14 +18,9 @@
             "restart_policy": "unless-stopped",
             "title": "Telegraf",
             "type": 1,
-            "volumes": [
-                {
-                    "container": "/var/lib/influxdb"
-                }
-            ],
             "env": [
                 {
-                    "default": "http://influxdb",
+                    "default": "http://influx:8086",
                     "label": "INFLUX_URL",
                     "name": "INFLUX_URL",
                     "description": "Url zur InfluxDB"
@@ -44,36 +39,6 @@
                     "label": "HOST_ETC",
                     "name": "HOST_ETC",
                     "description": "/etc"
-                },
-                {
-                    "default": "/proc",
-                    "label": "HOST_PROC",
-                    "name": "HOST_PROC",
-                    "description": "/hostfs/proc"
-                },
-                {
-                    "default": "/sys",
-                    "label": "HOST_SYS",
-                    "name": "HOST_SYS",
-                    "description": "/hostfs/sys"
-                },
-                {
-                    "default": "/var",
-                    "label": "HOST_VAR",
-                    "name": "HOST_VAR",
-                    "description": "/hostfs/var"
-                },
-                {
-                    "default": "/run",
-                    "label": "HOST_RUN",
-                    "name": "HOST_RUN",
-                    "description": "/hostfs/run"
-                },
-                {
-                    "default": "/",
-                    "label": "HOST_MOUNT_PREFIX",
-                    "name": "HOST_MOUNT_PREFIX",
-                    "description": "/hostfs"
                 }
             ]
         },
