@@ -33,12 +33,6 @@
                 {
                     "label": "INFLUX_PASSWORD",
                     "name": "INFLUX_PASSWORD"
-                },
-                {
-                    "default": "influxdb",
-                    "label": "HOST_ETC",
-                    "name": "HOST_ETC",
-                    "description": "/etc"
                 }
             ]
         },
