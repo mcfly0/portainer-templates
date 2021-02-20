@@ -6,7 +6,7 @@
                 "Agent"
             ],
             "description": "Telegraf is an agent for collecting metrics and writing them to InfluxDB or other outputs.",
-            "image": "telegraf",
+            "image": "telegraf:1.17",
             "logo": "https://d1q6f0aelx0por.cloudfront.net/product-logos/library-telegraf-logo.png",
             "name": "Telegraf",
             "platform": "linux",
