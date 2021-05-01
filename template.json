@@ -8,7 +8,7 @@
             "description": "Synapse, reference impl of a Matrix homeserver.",
             "image": "matrixdotorg/synapse:latest",
             "logo": "https://d36jcksde1wxzq.cloudfront.net/be7833db9bddb4494d2a7c3dd659199a.png",
-            "name": "Matrix homeserver",
+            "name": "MatrixHomeserver",
             "platform": "linux",
             "ports": [
                 "8008:8008"
@@ -18,7 +18,7 @@
             "type": 1,
             "env": [
                 {
-                    "default": "http://influx:8086",
+                    "default": "h2916937.stratoserver.net",
                     "label": "SYNAPSE_SERVER_NAME",
                     "name": "SYNAPSE_SERVER_NAME",
                     "description": "the server public hostname"
