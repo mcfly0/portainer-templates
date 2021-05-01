@@ -11,7 +11,7 @@
             "name": "MatrixHomeserver",
             "platform": "linux",
             "ports": [
-                "8008:8008"
+                "8008:8008/udp"
             ],
             "restart_policy": "unless-stopped",
             "title": "Matrix homeserver",
