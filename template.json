@@ -1351,7 +1351,7 @@
                     "name": "POSTGRES_DB"
                 },
                 {
-                    "default": "100",
+                    "default": "root",
                     "label": "POSTGRES_USER",
                     "name": "POSTGRES_USER"
                 },
@@ -1360,7 +1360,7 @@
                     "name": "POSTGRES_PASSWORD"
                 },
                 {
-                    "default": "postgresql",
+                    "default": "h2916939.stratoserver.net",
                     "label": "POSTGRES_HOST",
                     "name": "POSTGRES_HOST"
                 },
@@ -1372,6 +1372,16 @@
                 {
                     "label": "NEXTCLOUD_ADMIN_PASSWORD",
                     "name": "NEXTCLOUD_ADMIN_PASSWORD"
+                },
+                {
+                    "default": "1",
+                    "label": "APACHE_DISABLE_REWRITE_IP",
+                    "name": "APACHE_DISABLE_REWRITE_IP"
+                },
+                {
+                    "default": "",
+                    "label": "OVERWRITEHOST",
+                    "name": "OVERWRITEHOST"
                 }
             ],
             "image": "nextcloud:latest",
