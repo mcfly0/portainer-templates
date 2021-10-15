@@ -1380,8 +1380,8 @@
                 },
                 {
                     "default": "",
-                    "label": "OVERWRITEHOST",
-                    "name": "OVERWRITEHOST"
+                    "label": "TRUSTED_PROXIES",
+                    "name": "TRUSTED_PROXIES"
                 }
             ],
             "image": "nextcloud:latest",
