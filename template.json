@@ -2542,10 +2542,10 @@
                     "name": "PGID"
                 }
             ],
-            "image": "lscr.io/linuxserver/nzbget:latest",
+            "image": "linuxserver/nzbget:arm32v7-21.1.20221201",
             "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/nzbget-icon.png",
             "name": "nzbget",
-            "platform": "linux",
+            "platform": "linux, armv7",
             "ports": [
                 "6789:6789/tcp"
             ],
